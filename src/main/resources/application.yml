@@ -1,0 +1,50 @@
+server:
+  port: 8080
+  servlet:
+    context-path: /
+    encoding:
+      charset: UTF-8
+      enabled: true
+      force: true
+
+spring:
+  application:
+    name: account-service
+
+  servlet:
+    multipart:
+      max-file-size: 10MB
+      max-request-size: 10MB
+
+  jackson:
+    default-property-inclusion: non_null
+    serialization:
+      write-dates-as-timestamps: false
+
+logging:
+  level:
+    com.digi.account: DEBUG
+    org.springframework.web: INFO
+    org.apache.poi: WARN
+  pattern:
+    console: "%d{yyyy-MM-dd HH:mm:ss} [%thread] %-5level %logger{36} - %msg%n"
+    file: "%d{yyyy-MM-dd HH:mm:ss} [%thread] %-5level %logger{36} - %msg%n"
+
+# Custom statement configuration (can be overridden by statement-config.yml)
+statement:
+  templates:
+    base-path: templates/
+    retail: AccountStatementRetail.docx
+    private: AccountStatementPrivate.docx
+
+  mock-data:
+    base-path: mock/
+    retail: retail-mock-data.json
+    private: private-mock-data.json
+
+  pdf:
+    page-size: A4
+    orientation: portrait
+    pagination:
+      enabled: true
+      transactions-per-page: 25
