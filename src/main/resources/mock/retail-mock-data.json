@@ -1,0 +1,89 @@
+{
+  "header": {
+    "accountName": "CURRENT ACCOUNT",
+    "statementDate": "06-Nov-2025",
+    "statementPeriod": "01-Oct-2025 to 31-Oct-2025",
+    "currency": "QAR",
+    "customerCIF": "CUST001234",
+    "productCode": "CA001",
+    "productNumber": "ACC123456789",
+    "iban": "QA58DOHB00001234567890",
+    "cashLimit": "50,000.00",
+    "utilizedLimit": "0.00",
+    "address1": "Building 45, Street 123",
+    "address2": "West Bay, Doha",
+    "address3": "Qatar"
+  },
+  "transactions": [
+    {
+      "date": "2025-10-01",
+      "description": "Opening Balance",
+      "debit": "0.00",
+      "credit": "0.00",
+      "runningBalance": "25,000.00"
+    },
+    {
+      "date": "2025-10-02",
+      "description": "ATM Withdrawal - City Center",
+      "debit": "500.00",
+      "credit": "0.00",
+      "runningBalance": "24,500.00"
+    },
+    {
+      "date": "2025-10-05",
+      "description": "Online Transfer to Ahmed Al-Mansoori",
+      "debit": "1,500.00",
+      "credit": "0.00",
+      "runningBalance": "23,000.00"
+    },
+    {
+      "date": "2025-10-10",
+      "description": "Salary Credit - Company XYZ",
+      "debit": "0.00",
+      "credit": "25,000.00",
+      "runningBalance": "48,000.00"
+    },
+    {
+      "date": "2025-10-12",
+      "description": "POS Purchase - Carrefour Hypermarket",
+      "debit": "850.00",
+      "credit": "0.00",
+      "runningBalance": "47,150.00"
+    },
+    {
+      "date": "2025-10-15",
+      "description": "Online Purchase - Amazon.com",
+      "debit": "1,200.00",
+      "credit": "0.00",
+      "runningBalance": "45,950.00"
+    },
+    {
+      "date": "2025-10-18",
+      "description": "KAHRAMAA - Utility Bill Payment",
+      "debit": "450.00",
+      "credit": "0.00",
+      "runningBalance": "45,500.00"
+    },
+    {
+      "date": "2025-10-20",
+      "description": "POS Purchase - Restaurant The Pearl",
+      "debit": "320.00",
+      "credit": "0.00",
+      "runningBalance": "45,180.00"
+    },
+    {
+      "date": "2025-10-22",
+      "description": "WOQOD - Fuel Station",
+      "debit": "180.00",
+      "credit": "0.00",
+      "runningBalance": "45,000.00"
+    }
+
+
+  ],
+  "footer": {
+    "generatedOn": "06-Nov-2025 10:00:00",
+    "disclaimer": "This statement is system-generated and does not require a signature.",
+    "contactInfo": "For assistance, call 800-1234 or visit www.dukhanbank.com"
+  }
+}
